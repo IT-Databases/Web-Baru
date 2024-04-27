@@ -1,0 +1,45 @@
+header,.mitra-name {
+    background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #f5af19,
+        #f12711
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #f5af19,
+        #f12711
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.berita-page {
+    background: #f7971e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #ffd200,
+        #f7971e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #ffd200,
+        #f7971e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pagination p {
+    display: none;
+}
+
+.pagination span span {
+    background-color: #f12711;
+    color: white;
+}
+
+.pagination span {
+    overflow: hidden;
+}
+
+.detail-berita .detail p {
+    margin-bottom: 50px !important;
+}
+
