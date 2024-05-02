@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Berita;
+use Illuminate\Support\Facades\Storage;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 use App\Models\Perpustakaan;
 use Illuminate\Http\Request;
 
@@ -39,5 +42,22 @@ class PerpusController extends Controller
     public function cari(Request $request){
         $perpustakaans = Perpustakaan::where('judul','LIKE','%'.$request->search.'%')->paginate(8);
         return view ('perpustakaan', compact('perpustakaans'));
+    }
+    public function downloadPdf($slug) {
+        $perpustakaan = Perpustakaan::where('slug', $slug)->firstOrFail();
+    
+        // Ambil path file PDF dari model Perpustakaan
+        $pdfPath = $perpustakaan->pdf_file;
+    
+        // Mendapatkan nama file PDF
+        $pdfName = pathinfo($pdfPath, PATHINFO_FILENAME);
+    
+        // Menggunakan Storage facade untuk mengambil file PDF dari penyimpanan
+        $pdfFile = Storage::disk('public')->get($pdfPath);
+    
+        // Mengembalikan file PDF sebagai response
+        return response($pdfFile)
+            ->header('Content-Type', 'application/pdf')
+            ->header('Content-Disposition', 'attachment; filename="' . $pdfName . '.pdf"');
     }
 }
