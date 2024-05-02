@@ -58,7 +58,7 @@
                             <div class="h-2/5 bg-white pt-2 flex flex-col justify-between">
                                 <div>
                                     <h1 class="font-semibold text-primary text-lg truncate">{{ $perpustakaan->judul }}</h1>
-                                    <p class="text-xs"> {{ $perpustakaan->ringkasan . '...' }}</p>
+                                    <p class="text-xs">{{ Illuminate\Support\Str::limit(strip_tags($perpustakaan->ringkasan), 30) . '...' }}</p>
                                 </div>
 
                                 <div class="container flex text-xs justify-between text-slate-500">

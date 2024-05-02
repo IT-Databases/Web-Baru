@@ -17,8 +17,8 @@
                     <p>Sumber :</p><p>{{ $perpustakaan->sumber }}</p>
                 </div>
                 <div class="flex gap-1">
-                    <a class="btn btn-primary text-blue-500 hover:underline" href="/perpustakaan/download-pdf/{{ $perpustakaan->slug }}">Unduh Dokumen</a>
-                </div>
+                    <a class="btn btn-primary text-blue-500 hover:underline" href="/perpustakaan/download-pdf/{{ $perpustakaan->slug }}" target="_blank" type="application/pdf">View Document</a>
+                </div>                
             </div>
         </div>
         <div class="w-full flex flex-col justify-center gap-3 md:hidden">
@@ -34,7 +34,7 @@
                         <div class="h-2/5 bg-white pt-2 flex flex-col justify-between">
                             <div>
                                 <h1 class="font-semibold text-primary text-lg truncate">{{ $random->judul }}</h1>
-                                <p class="text-xs"> {{ $random->ringkasan . '...' }}</p>
+                                <p class="text-xs">{{ Illuminate\Support\Str::limit(strip_tags($random->ringkasan), 30) . '...' }}</p>
                             </div>
                             <div class="container flex text-xs justify-between text-slate-500">
                                 <p>{{ $random->created_at->translatedFormat('l, j F Y') }}</p>
@@ -61,7 +61,7 @@
                     <div class="h-2/5 bg-white pt-2 flex flex-col justify-between">
                         <div>
                             <h1 class="font-semibold text-primary text-lg truncate">{{ $random->judul }}</h1>
-                            <p class="text-xs"> {{ $random->ringkasan . '...' }}</p>
+                            <p class="text-xs">{{ Illuminate\Support\Str::limit(strip_tags($random->ringkasan), 30) . '...' }}</p>
                         </div>
                         <div class="container flex text-xs justify-between text-slate-500">
                             <p>{{ $random->created_at->translatedFormat('l, j F Y') }}</p>
@@ -76,3 +76,13 @@
         </div>
     </div>
 @endsection
+
+<script>
+    function openPdf(slug) {
+        // Construct the URL of the PDF file
+        var pdfUrl = "/perpustakaan/download-pdf/" + slug;
+
+        // Open the PDF file in a new tab or window
+        window.open(pdfUrl, '_blank');
+    }
+</script>

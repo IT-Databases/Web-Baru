@@ -41,7 +41,6 @@ class NewsletterController extends Controller
     
         // Mengembalikan file PDF sebagai response
         return response($pdfFile)
-            ->header('Content-Type', 'application/pdf')
-            ->header('Content-Disposition', 'attachment; filename="' . $pdfName . '.pdf"');
+            ->header('Content-Type', 'application/pdf');
     }
 }
