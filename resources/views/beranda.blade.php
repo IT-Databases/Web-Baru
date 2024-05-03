@@ -443,5 +443,49 @@
         </div>
     </div>
 
+        <div data-aos="fade-up" class="w-full px-10" id="faq">
+            <div class="flex gap-3 mb-6">
+                <div class="list h-8 w-8 bg-primary rounded-lg hidden lg:block">
+                </div>
+                <h1 class="text-3xl font-bold text-primary text-center lg:text-start w-full">Faq</h1>
+            </div>
+            <div class="flex flex-col justify-center gap-3 w-full lg:w-3/4 lg:ps-2 mb-6">
+                <p class="text-justify font-bold">Apa yang harus saya lakukan saat mengalami gejala-gejala Tuberkulosis?</p>
+                <p>Memeriksakan diri ke layanan kesehatan terdekat. Apabila terindikasi betul adanya gejala Tuberkulosis, maka anda akan disarankan untuk cek dahak yang hasilnya akan keluar selama 1-2 hari</p>
+                <br>    
+                <p class="text-justify font-bold">Apa yang harus saya lakukan saat mengalami atau melihat buruknya stigma dan terdapat tindakan diskriminasi pada pasien tuberkulosis?</p>
+                <p>Anda dapat melaporkan kasus tersebut kepada yayasan kami agar kami berikan bimbingan konseling dan kader khusus di wilayah anda.</p>
+                <br>
+                <p class="text-justify font-bold">Apakah pengobatan Tuberkulosis gratis?</p>
+                <p>Ya, pengobatan tuberkulosis (TB) disediakan secara gratis melalui program-program yang diselenggarakan oleh Kementerian Kesehatan Republik Indonesia.</p>
+                <br>
+                <p class="text-justify font-bold">Bagaimana batasan dalam berinteraksi dengan pasien tuberkulosis?</p>
+                <p>Saat berinteraksi dengan pasien Tuberkulosis, jangan lupa untuk menggunakan alat pelindung diri seperti masker medis. Selain itu, anda perlu menjaga kebersihan tangan dan membatasi kontak dekat.</p>
+                <br>
+                <p class="text-justify font-bold">Apakah pasien Tuberkulosis diberi bantuan dana?</p>
+                <p>Di beberapa negara, termasuk Indonesia, pemerintah menyediakan bantuan dana atau subsidi bagi pasien tuberkulosis (TB) untuk membantu mereka dalam biaya pengobatan dan perawatan.</p>
+                <br>
+                <p class="text-justify font-bold">Apabila terdapat pasien dari daerah di luar kota Makassar, apakah Yamali punya rekomendasi tempat untuk pasien yang datang dari jauh?</p>
+                <p>Ya, Yamali menyediakan rumah singgah (shelter) yang diperuntukkan kepada pasien yang datang dari daerah jauh untuk berobat.</p>
+                <br>
+                <p class="text-justify font-bold">Apakah pasien Tuberkulosis diperbolehkan bekerja atau beraktivitas seperti biasa selama menjalani pengobatan ? </p>
+                <p>Ya, pasien Tuberkulosis diperbolehkan bekerja atau beraktivitas seperti biasa selama menjalani pengobatan, selama kondisi kesehatannya memungkinkan.</p>
+                <br>
+                <p class="text-justify font-bold">Apakah orang yang terinfeksi TBC harus dikarantina?</p>
+                <p>Orang yang terinfeksi TBC tidak perlu dikarantina, tetapi mereka harus mematuhi tindakan pencegahan penyebaran penyakit seperti menggunakan masker dan menjaga jarak dengan orang lain, terutama saat batuk atau bersin.</p>
+                <br>
+                <p class="text-justify font-bold">Berapa lama masa pengobatan Tuberkulosis?</p>
+                <p>Lama pengobatan bervariasi tergantung pada jenis TB, tingkat keparahan, dan respons individu terhadap pengobatan. Secara umum, pengobatan TB biasanya berlangsung selama minimal 6 bulan hingga 9 bulan. 
+                    Beberapa kasus TB yang lebih kompleks atau resisten terhadap obat mungkin memerlukan pengobatan yang lebih lama, bahkan hingga setahun atau lebih. </p>
+                    <br>
+                <p class="text-justify font-bold">Apakah ada penanganan khusus untuk anak-anak, ibu hamil, atau lansia dengan risiko tinggi yang terinfeksi TBC?</p>
+                <p>Iya ada, Ini termasuk penggunaan regimen obat yang disesuaikan dengan kondisi khusus mereka, pemantauan yang ketat terhadap efek samping obat, 
+                    serta perawatan yang terkoordinasi dengan dokter spesialis yang berpengalaman dalam menangani kasus-kasus khusus ini. 
+                    Pemantauan teratur dan dukungan yang kuat dari sistem kesehatan juga penting untuk memastikan bahwa penanganan yang tepat diberikan dan komplikasi yang mungkin terjadi dapat dideteksi dan ditangani dengan cepat.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
     <x-kontak />
 @endsection

@@ -9,7 +9,7 @@
         <div class="font-poppins text-[.8rem] xl:mt-8">
             <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.642772792119!2d119.45000907489676!3d-5.161042094816289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee356565b3ba5%3A0xb8bbbc8094a4a9cb!2sYamali%20TB!5e0!3m2!1sid!2sid!4v1698936517109!5m2!1sid!2sid"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             class="contact h-[300px] w-full rounded-2xl shadow-lg sm:h-[400px]"></iframe>
             <div class="flex items-center justify-between flex-col lg:flex-row">
