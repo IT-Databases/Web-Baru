@@ -11,16 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('perpustakaans', function (Blueprint $table) {
+        Schema::create('newsletters', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
             $table->string('slug');
             $table->text('ringkasan');
-            $table->string('sumber');
             $table->string('gambar');
             $table->binary('pdf_file')->nullable();
-            $table->string('tag');
-            $table->timestamps(); 
+            $table->timestamps();
         });
     }
 
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('perpustakaans');
+        Schema::dropIfExists('newsletters');
     }
 };

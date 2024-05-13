@@ -5,15 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Perpustakaan extends Model
+class Newsletter extends Model
 {
     use HasFactory;
     protected $fillable = [
         'judul',
         'slug',
         'ringkasan',
-        'sumber',
-        'tag',
         'pdf_file',
         'gambar',  
     ];

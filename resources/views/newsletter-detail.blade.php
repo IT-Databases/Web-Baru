@@ -4,28 +4,24 @@
         <div class="w-full lg:w-3/4">
             <div class="container flex flex-col justify-center h-fit detail-berita">
                 <div class="container h-96 text-center rounded-lg overflow-hidden">
-                    <img src={{ asset('/storage/' . $perpustakaan->gambar) }} class="h-full w-full object-cover" />
+                    <img src={{ asset('/storage/' . $newsletter->gambar) }} class="h-full w-full object-cover" />
                 </div>
-                <h1 class=" text-xl lg:text-2xl font-bold text-black text-center mb-10 mt-10"> {{ $perpustakaan->judul }}</h1>
-                <p class="text-md lg:text-xl text-primary font-bold">{{ $perpustakaan->created_at->translatedFormat('l, j F Y') }}
+                <h1 class=" text-xl lg:text-2xl font-bold text-black text-center mb-10 mt-10"> {{ $newsletter->judul }}</h1>
+                <p class="text-md lg:text-xl text-primary font-bold">{{ $newsletter->created_at->translatedFormat('l, j F Y') }}
                 </p>
                 <div class="container w-full my-5 text-justify flex flex-col justify-start gap-3">
-                    {!! html_entity_decode($perpustakaan->ringkasan) !!}
-                </div>
-
-                <div class="flex gap-1">
-                    <p>Sumber :</p><p>{{ $perpustakaan->sumber }}</p>
+                    {!! html_entity_decode($newsletter->ringkasan) !!}
                 </div>
                 <div class="flex gap-1">
-                    <a class="btn btn-primary text-blue-500 hover:underline" href="/perpustakaan/download-pdf/{{ $perpustakaan->slug }}" target="_blank" type="application/pdf">View Document</a>
-                </div>                
+                    <a class="btn btn-primary text-blue-500 hover:underline" href="/newsletter/download-pdf/{{ $newsletter->slug }}" target="_blank" type="application/pdf">View Document</a>
+                </div>
             </div>
         </div>
         <div class="w-full flex flex-col justify-center gap-3 md:hidden">
             <h1 class="text-slate-500 border-slate-500 rounded-md border-solid border p-3 w-full">Baca Juga</h1>
             <div class="w-full lg:w-1/4 flex overflow-scroll">
-                @foreach ($perpustakaanRandom as $random)
-                    <a href="/perpustakaan/{{ $random->slug }}"
+                @foreach ($newsletterRandom as $random)
+                    <a href="/newsletter/{{ $random->slug }}"
                         class="mb-3 rounded-md bg-white h-72 block p-2 w-full border border-solid border-primary me-3 lg:me-0">
                         <div class="container h-3/5 w-full rounded-sm overflow-hidden bg-red-500">
                             <img src={{ asset('/storage/' . $random->gambar) }}
@@ -51,8 +47,8 @@
         <div class="w-1/4 hidden md:block">
             <h1 class="text-slate-500 border-slate-500 rounded-md border-solid border p-3 w-full mb-3">
                 Baca Juga</h1>
-            @foreach ($perpustakaanRandom as $random)
-                <a href="/perpustakaan/{{ $random->slug }}"
+            @foreach ($newsletterRandom as $random)
+                <a href="/newsletter/{{ $random->slug }}"
                     class="mb-3 rounded-md bg-white h-72 block p-2 w-full border border-solid border-primary me-3 lg:me-0">
                     <div class="container h-3/5 w-full rounded-sm overflow-hidden bg-red-500">
                         <img src={{ asset('/storage/' . $random->gambar) }}
@@ -71,7 +67,7 @@
             @endforeach
             <a href="/perpustakaan" class="mt-5 text-primary flex gap-2 items-center"><i
                     class="ph ph-arrow-circle-right text-xl"></i>
-                <p class="hover:underline">Berita selengkapnya</p>
+                <p class="hover:underline">Konten selengkapnya</p>
             </a>
         </div>
     </div>
@@ -80,7 +76,7 @@
 <script>
     function openPdf(slug) {
         // Construct the URL of the PDF file
-        var pdfUrl = "/perpustakaan/download-pdf/" + slug;
+        var pdfUrl = "/newsletter/download-pdf/" + slug;
 
         // Open the PDF file in a new tab or window
         window.open(pdfUrl, '_blank');
