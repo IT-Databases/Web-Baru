@@ -443,5 +443,300 @@
         </div>
     </div>
 
+        <div data-aos="fade-up" class="w-full px-10" id="faq">
+            <div class="flex gap-3 mb-6">
+                <div class="list h-8 w-8 bg-primary rounded-lg hidden lg:block">
+                </div>
+                <h1 class="text-3xl font-bold text-primary text-center lg:text-start w-full">Faq</h1>
+            </div>
+                    <h1 class=> </h1>
+                    <p></p>
+                
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq1" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apa yang harus saya lakukan saat mengalami gejala-gejala Tuberkulosis?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq1 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Memeriksakan diri ke layanan kesehatan terdekat. Apabila terindikasi betul adanya gejala Tuberkulosis, maka anda akan disarankan untuk cek dahak yang hasilnya akan keluar selama 1-2 hari</li>
+                        </ul>
+                </li>
+                <br>
+                <br> 
+
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq2" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apa yang harus saya lakukan saat mengalami atau melihat buruknya stigma dan terdapat tindakan diskriminasi pada pasien tuberkulosis?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq2 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Anda dapat melaporkan kasus tersebut kepada yayasan kami agar kami berikan bimbingan konseling dan kader khusus di wilayah anda.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+                
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq3" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apakah pengobatan Tuberkulosis gratis?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq3 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Ya, pengobatan tuberkulosis (TB) disediakan secara gratis melalui program-program yang diselenggarakan oleh Kementerian Kesehatan Republik Indonesia.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq4" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Bagaimana batasan dalam berinteraksi dengan pasien tuberkulosis?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq4 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Saat berinteraksi dengan pasien Tuberkulosis, jangan lupa untuk menggunakan alat pelindung diri seperti masker medis. Selain itu, anda perlu menjaga kebersihan tangan dan membatasi kontak dekat.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+                
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq5" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apakah pasien Tuberkulosis diberi bantuan dana?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq5 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Di beberapa negara, termasuk Indonesia, pemerintah menyediakan bantuan dana atau subsidi bagi pasien tuberkulosis (TB) untuk membantu mereka dalam biaya pengobatan dan perawatan.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq6" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apabila terdapat pasien dari daerah di luar kota Makassar, apakah Yamali punya rekomendasi tempat untuk pasien yang datang dari jauh?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq6 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Ya, Yamali menyediakan rumah singgah (shelter) yang diperuntukkan kepada pasien yang datang dari daerah jauh untuk berobat.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq7" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apakah pasien Tuberkulosis diperbolehkan bekerja atau beraktivitas seperti biasa selama menjalani pengobatan ? 
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq7 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Ya, pasien Tuberkulosis diperbolehkan bekerja atau beraktivitas seperti biasa selama menjalani pengobatan, selama kondisi kesehatannya memungkinkan.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq8" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apakah orang yang terinfeksi TBC harus dikarantina?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq8 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Orang yang terinfeksi TBC tidak perlu dikarantina, tetapi mereka harus mematuhi tindakan pencegahan penyebaran penyakit seperti menggunakan masker dan menjaga jarak dengan orang lain, terutama saat batuk atau bersin.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq9" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Berapa lama masa pengobatan Tuberkulosis?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq9 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Lama pengobatan bervariasi tergantung pada jenis TB, tingkat keparahan, dan respons individu terhadap pengobatan. Secara umum, pengobatan TB biasanya berlangsung selama minimal 6 bulan hingga 9 bulan. 
+                            Beberapa kasus TB yang lebih kompleks atau resisten terhadap obat mungkin memerlukan pengobatan yang lebih lama, bahkan hingga setahun atau lebih.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+
+                <li class="relative" style="list-style-type: none;">
+                        <a id="Faq10" class="text-primary text-justify font-bold flex cursor-pointer items-center gap-2 block py-4 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Apakah ada penanganan khusus untuk anak-anak, ibu hamil, atau lansia dengan risiko tinggi yang terinfeksi TBC?
+                            <i class="ph ph-caret-down"></i>
+                        </a>
+                        <style>
+                            .custom-li {
+                            padding: 18px; 
+                            font-size: 16px;
+                            }
+                        </style>
+                        <ul class="hidden dropdown-menu Faq10 absolute z-10 bg-white border rounded-lg shadow-lg mt-2">
+                            <li class="custom-li font-bold">Iya ada, Ini termasuk penggunaan regimen obat yang disesuaikan dengan kondisi khusus mereka, pemantauan yang ketat terhadap efek samping obat, serta perawatan yang terkoordinasi dengan dokter spesialis yang berpengalaman dalam menangani kasus-kasus khusus ini. 
+                            Pemantauan teratur dan dukungan yang kuat dari sistem kesehatan juga penting untuk memastikan bahwa penanganan yang tepat diberikan dan komplikasi yang mungkin terjadi dapat dideteksi dan ditangani dengan cepat.</li>
+                        </ul>
+                </li>
+                <br>
+                <br>
+            </div>
+        </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq1 = document.querySelector('#Faq1');
+                const dropdownMenu = document.querySelector('.Faq1');
+    
+            Faq1.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq2 = document.querySelector('#Faq2');
+                const dropdownMenu = document.querySelector('.Faq2');
+    
+            Faq2.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq3 = document.querySelector('#Faq3');
+                const dropdownMenu = document.querySelector('.Faq3');
+    
+            Faq3.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq4 = document.querySelector('#Faq4');
+                const dropdownMenu = document.querySelector('.Faq4');
+    
+            Faq4.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq5 = document.querySelector('#Faq5');
+                const dropdownMenu = document.querySelector('.Faq5');
+    
+            Faq5.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq6 = document.querySelector('#Faq6');
+                const dropdownMenu = document.querySelector('.Faq6');
+    
+            Faq6.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq7 = document.querySelector('#Faq7');
+                const dropdownMenu = document.querySelector('.Faq7');
+    
+            Faq7.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq8 = document.querySelector('#Faq8');
+                const dropdownMenu = document.querySelector('.Faq8');
+    
+            Faq8.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq9 = document.querySelector('#Faq9');
+                const dropdownMenu = document.querySelector('.Faq9');
+    
+            Faq9.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const Faq10 = document.querySelector('#Faq10');
+                const dropdownMenu = document.querySelector('.Faq10');
+    
+            Faq10.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+    </div>
+    <br>
     <x-kontak />
 @endsection
