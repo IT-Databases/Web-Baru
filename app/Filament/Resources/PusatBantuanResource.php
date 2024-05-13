@@ -23,8 +23,7 @@ class PusatBantuanResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                //
+            ->schema([    
             ]);
     }
 
@@ -67,8 +66,8 @@ class PusatBantuanResource extends Resource
     {
         return [
             'index' => Pages\ListPusatBantuans::route('/'),
-            'create' => Pages\CreatePusatBantuan::route('/create'),
-            'edit' => Pages\EditPusatBantuan::route('/{record}/edit'),
+            // 'create' => Pages\CreatePusatBantuan::route('/create'),
+            // 'edit' => Pages\EditPusatBantuan::route('/{record}/edit'),
         ];
     }
 }

@@ -34,4 +34,5 @@ Route::get('/perpustakaan', [PerpusController::class, 'index'])->name('perpustak
 Route::get('/perpustakaan/{slug}', [PerpusController::class, 'detail']);
 Route::get('/faq', [FaQController::class, 'index']);
 Route::get('/faq/{slug}', [FaQController::class, 'detail']);
+Route::post('/pusatbantuan', [ReportController::class, 'create']);
 

@@ -93,47 +93,40 @@
 
     <main class="w-full overflow-x-hidden">
         @yield('main')
-        <div class="container border p-3 w-1/3 fixed bottom-5 right-5 bg-white shadow-xl rounded-lg">
-              <div class="flex justify-between w-full items-center">
-                <h1 class="text-3xl font-bold text-primary text-center lg:text-start w-full">Pusat Bantuan</h1>
-                <button class="lg:text-end" data-garden-id="buttons.icon_button" data-garden-version="8.74.0" type="button" aria-label="Perkecil widget" class="StyledButton-sc-qe3ace-0 styles__StyledIconButton-sc-15a7l1o-0 gGNuxe StyledIconButton-sc-1t0ughp-0 stzzW"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" data-testid="Icon--dash" data-garden-id="buttons.icon" data-garden-version="8.74.0" class="StyledIcon-sc-19meqgg-0 cqORhS"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M3 8h10"></path></svg></button>
-            </div>
-            <form action="/pusatbantuan" method="POST" id="floating-help-for">
-                @csrf
-                <div>
-                    <div>
-                        <label for="name"
-                            class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-                        <input type="text" id="name" name="name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Tuliskan Nama Anda" required />
-                    </div>
-                    <div>
-                        <label for="phone" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
-                            Telepon</label>
-                        <input type="number" id="phone" name="phone"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="0821xxxxx" pattern="[0-9]" required />
-                    </div>
-                    <div>
-                        <label for="email" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-                        <input type="email" id="email" name="email"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="nama@anda.com" required />
-                    </div>
-                    <div>
-                        <label for="kendala" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Kendala</label>
-                        <textarea id="kendala" name="kendala"
-                            class="h-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Tuliskan Kendala Anda" required></textarea>
-                    </div>
-                </div>
-                <button type="submit"
-                    class="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-3">Submit</button>
-            </form>
-        {{-- </div> --}}
+        <div id="pusatbantuan" class="container border p-3 w-1/3 fixed bottom-5 right-5 bg-white shadow-xl rounded-lg z-50 hidden">
+            <div class="flex justify-between w-full items-center">
+              <h1 class="text-3xl font-bold text-primary text-center lg:text-start w-full">Pusat Bantuan</h1>
+              <button onclick="closeWindowAndReturnToBeranda()" class="lg:text-end" data-garden-id="buttons.icon_button" data-garden-version="8.74.0" type="button" aria-label="Perkecil widget">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" data-testid="Icon--dash" data-garden-id="buttons.icon" data-garden-version="8.74.0" class="StyledIcon-sc-19meqgg-0 cqORhS">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M3 8h10"></path>
+                  </svg>
+              </button>                
+          </div>
+          <form action="/pusatbantuan" method="POST" id="floating-help-for">
+            @csrf              
+              <div id="formPusatBantuan">
+                  <div>
+                      <label for="name" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
+                      <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tuliskan Nama Anda" required="">
+                  </div>
+                  <div>
+                      <label for="phone" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
+                          Telepon</label>
+                      <input type="number" id="phone" name="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="0821xxxxx" pattern="[0-9]" required="">
+                  </div>
+                  <div>
+                      <label for="email" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                      <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="nama@anda.com" required="">
+                  </div>
+                  <div>
+                      <label for="kendala" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Kendala</label>
+                      <textarea id="kendala" name="kendala" class="h-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tuliskan Kendala Anda" required=""></textarea>
+                  </div>
+              </div>
+              <button type="submit" class="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-3">Submit</button>
+          </form>
+      </div>
     </main>
-
 
     <footer class="bg-slate-900 dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -243,6 +236,23 @@
                 dropdownMenu.classList.toggle('hidden');
             });
         });
+    </script>
+    <script>
+        // Fungsi untuk menampilkan atau menyembunyikan elemen pusat bantuan
+        function togglePusatBantuan() {
+            var pusatbantuan = document.getElementById('pusatbantuan');
+            // Toggle class 'hidden'
+            pusatbantuan.classList.toggle('hidden');
+        }
+    </script>
+    <script>
+        function closeWindowAndReturnToBeranda() {
+    // Menutup jendela saat ini
+    window.close();
+
+    // Mengarahkan kembali ke halaman beranda
+    window.location.href = "/"; // Ganti "/beranda" dengan URL sesuai kebutuhan Anda
+}
     </script>
     {{-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
