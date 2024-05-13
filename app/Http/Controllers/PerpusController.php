@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use App\Models\Perpustakaan;
+use App\Models\Newsletter;
 use Illuminate\Http\Request;
 
 use function Laravel\Prompts\search;
@@ -16,6 +17,8 @@ class PerpusController extends Controller
     public function index(Request $request) {
         $status = 'perpustakaan';
         $perpustakaans = Perpustakaan::orderBy('created_at', 'desc');
+        $status2 ='newsletter';
+        $newsletters = Newsletter::orderBy('created_at','desc')->paginate(8);
 
         // Check if tags are present in the request
         if ($request->has('tags')) {
@@ -29,7 +32,7 @@ class PerpusController extends Controller
 
         $perpustakaans = $perpustakaans->paginate(8);
 
-        return view('perpustakaan', compact('perpustakaans', 'status'));
+        return view('perpustakaan', compact('perpustakaans', 'status', 'newsletters','status2'));
     }
 
     public function detail($slug){

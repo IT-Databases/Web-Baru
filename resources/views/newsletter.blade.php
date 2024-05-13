@@ -12,10 +12,58 @@
             penyebaran
             tuberkulosis di Sulawesi Selatan</p>
     </div>
+    <style>
+        /* Aturan CSS untuk layar dengan lebar kurang dari 768px (mobile) */
+        @media (max-width: 767px) {
+            .flex-responsive {
+                flex-direction: column; /* Mengubah arah flex menjadi kolom pada layar mobile */
+            }
 
+            .btn {
+                margin-right: 0;
+                margin-bottom: 10px; /* Menambahkan jarak antara tombol pada layar mobile */
+            }
+
+            #tagFilters {
+                justify-content: center; /* Center the buttons horizontally */
+            }
+
+            .search-form {
+                display: flex; /* Mengatur tata letak menjadi flex */
+                align-items: stretch; /* Mengatur item untuk meregang pada lebar penuh */
+                flex-wrap: wrap; /* Mengatur wrap item jika overflow */
+            }
+
+            .search-input {
+                width: calc(80% - 5px); /* Menjadikan input pencarian penuh lebar pada layar mobile */
+                border-top-left-radius: 20px; /* Mengatur radius sudut pada sudut kiri atas */
+                border-bottom-left-radius: 20px;
+            }
+        
+            .search-button {
+                width: calc(20% - 5px); /* Menjadikan tombol pencarian penuh lebar pada layar mobile */
+                border-top-right-radius: 20px; /* Mengatur radius sudut pada sudut kanan atas */
+                border-bottom-right-radius: 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .search-input {
+                width: 80%; /* Menjadikan input pencarian 80% lebar pada layar desktop */
+                border-top-left-radius: 20px; /* Mengatur radius sudut pada sudut kiri atas */
+                border-bottom-left-radius: 20px; /* Mengatur radius sudut pada sudut kiri bawah */
+            }
+        
+            .search-button {
+                width: 20%; /* Menjadikan tombol pencarian 20% lebar pada layar desktop */
+                border-top-right-radius: 20px; /* Mengatur radius sudut pada sudut kanan atas */
+                border-bottom-right-radius: 20px; /* Mengatur radius sudut pada sudut kanan bawah */
+            }
+        }
+    </style>
     <div class="p-10 h-fit w-full">
-        <div class="flex items-center justify-between mb-10 w-full ">
-            <div class="flex justify-start gap-2 " id="tagFilters">
+        <div class="flex items-center justify-between mb-10 w-full flex-responsive">
+            <div class="flex justify-start gap-2 flex-wrap" id="tagFilters">
                 <a href="/perpustakaan" class="btn btn-primary block py-2 mr-5 
                 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 
                 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
@@ -33,17 +81,40 @@
                     md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
                     md:dark:hover:bg-transparent dark:border-gray-700">Newsletter</a>
             </div>
-            <form action="/newsletter" class="w-full lg:w-1/2 flex items-center " method="POST">
+            <form action="/newsletter" class="w-full lg:w-1/2 flex items-center search-form" method="POST">
                 @csrf
                 <input type="search" name="search" id="search" placeholder="cari judul"
-                    class="w-full rounded-l-full px-5 focus:ring-primary focus:border-primary text-sm">
-                <button type="submit" class="bg-primary text-white px-5 py-2 rounded-r-full">Cari</button>
+                    class="rounded-l-full px-5 focus:ring-primary focus:border-primary text-sm search-input">
+                <button type="submit" class="bg-primary text-white px-5 py-2 rounded-r-full search-button">Cari</button>
             </form>
         </div>
 
-        <div class=" w-full h-fit">
+        <style>
+            /* Aturan CSS untuk layar dengan lebar kurang dari 768px (mobile) */
+            @media (max-width: 767px) {
+                .grid {
+                    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Menjadikan grid satu kolom pada layar mobile */
+                }
             
+                .swiper-slide {
+                    width: 80%; /* Mengatur lebar slider menjadi penuh pada layar mobile */
+                    margin: 0 auto;
+                }
+            
+                .h-72 {
+                    height: auto; /* Mengatur tinggi item menjadi otomatis untuk menghindari pembatasan pada layar kecil */
+                }
+            }
+            
+            /* Aturan CSS untuk layar dengan lebar 768px atau lebih (desktop) */
+            @media (min-width: 768px) {
+                .grid {
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Menyesuaikan jumlah kolom pada layar desktop */
+                }
+            }
+        </style>
 
+        <div class=" w-full h-fit">
             <div class="w-full h-full grid grid-cols-4 gap-4">
                 @if ($newsletters->isEmpty())
                     <p class="text-red-500 font-bold">Data perpustakaan tidak ditemukan</p>

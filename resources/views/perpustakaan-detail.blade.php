@@ -6,13 +6,18 @@
                 <div class="container h-96 text-center rounded-lg overflow-hidden">
                     <img src={{ asset('/storage/' . $perpustakaan->gambar) }} class="h-full w-full object-cover" />
                 </div>
-                <h1 class=" text-xl lg:text-2xl font-bold text-black text-center mb-10 mt-10"> {{ $perpustakaan->judul }}</h1>
+                <h1 class="text-xl lg:text-2xl font-bold text-black text-center mb-10 mt-10"> {{ $perpustakaan->judul }}</h1>
                 <p class="text-md lg:text-xl text-primary font-bold">{{ $perpustakaan->created_at->translatedFormat('l, j F Y') }}
                 </p>
-                <div class="container w-full my-5 text-justify flex flex-col justify-start gap-3">
-                    {!! html_entity_decode($perpustakaan->ringkasan) !!}
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="container-fluid w-full my-5 text-justify flex flex-col justify-start gap-3">
+                                <p>{!! html_entity_decode($perpustakaan->ringkasan) !!}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="flex gap-1">
                     <p>Sumber :</p><p>{{ $perpustakaan->sumber }}</p>
                 </div>
