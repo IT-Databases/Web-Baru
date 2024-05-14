@@ -155,7 +155,8 @@
     </script>
 @endpush
 @section('main')
-    <header class="h-screen w-full flex flex-col justify-center items-center ">
+    <header class="h-screen w-full flex flex-col justify-center items-center scroll-smooth">
+        <button onclick="togglePusatBantuan()" class="bg-blue-500 text-white flex fixed bottom-5 right-5 rounded-md z-50 p-3">Pusat Bantuan</button>
         <img class="w-full block lg:hidden md:w-2/3 animate__animated animate__fadeInDown"src="/img/hero2.png" alt="hero">
         <div class="w-full flex  lg:content-center lg:justify-between px-10  ">
             <div
@@ -440,10 +441,10 @@
                     @endfor
                 </div>
             </div>
-            <div
-                class=" w-1/3 lg:w-1/5 mitra-name flex items-center justify-center p-5 lg:p-10 rounded-r-full absolute left-0 h-full z-10">
+            <div class=" w-1/3 lg:w-1/5 mitra-name flex items-center justify-center p-5 lg:p-10 rounded-r-full absolute left-0 h-full z-10">
                 <h1 class="font-bold text-white text-md lg:text-xl">CSO</h1>
             </div>
+
         </div>
     </div>
 
