@@ -81,15 +81,14 @@
                     md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
                     md:dark:hover:bg-transparent dark:border-gray-700">Newsletter</a>
             </div>
-            <form action="/perpustakaan" class="w-full lg:w-1/2 flex items-center search-form" method="POST">
+            <form action="/newsletter" class="w-full lg:w-1/2 flex items-center search-form" method="POST">
                 @csrf
                 <input type="search" name="search" id="search" placeholder="cari judul"
                     class="rounded-l-full px-5 focus:ring-primary focus:border-primary text-sm search-input">
                 <button type="submit" class="bg-primary text-white px-5 py-2 rounded-r-full search-button">Cari</button>
             </form>
         </div>
-        
-        
+
         <style>
             /* Aturan CSS untuk layar dengan lebar kurang dari 768px (mobile) */
             @media (max-width: 767px) {
@@ -114,30 +113,12 @@
                 }
             }
         </style>
+
         <div class=" w-full h-fit">
             <div class="w-full h-full grid grid-cols-4 gap-4">
-                @if ($perpustakaans->isEmpty() && $newsletters->isEmpty())
+                @if ($newsletters->isEmpty())
                     <p class="text-red-500 font-bold">Data perpustakaan tidak ditemukan</p>
                 @else
-                    @foreach ($perpustakaans as $perpustakaan)
-                        <a href="/perpustakaan/{{ $perpustakaan->slug }}"
-                            class="swiper-slide rounded-md bg-white p-2 w-full h-72 border border-solid border-primary">
-                            <div class="container h-3/5 rounded-sm overflow-hidden bg-red-500">
-                                <img src={{ asset('/storage/' . $perpustakaan->gambar) }}
-                                    class="h-full w-full object-center object-cover" />
-                            </div>
-                            <div class="h-2/5 bg-white pt-2 flex flex-col justify-between">
-                                <div>
-                                    <h1 class="font-semibold text-primary text-lg truncate">{{ $perpustakaan->judul }}</h1>
-                                    <p class="text-xs">{{ Illuminate\Support\Str::limit(strip_tags($perpustakaan->ringkasan), 30) . '...' }}</p>
-                                </div>
-
-                                <div class="container flex text-xs justify-between text-slate-500">
-                                    <p>{{ $perpustakaan->created_at->translatedFormat('l, j F Y') }}</p>
-                                </div>
-                            </div>
-                        </a>
-                    @endforeach
                     @foreach ($newsletters as $newsletter)
                         <a href="/newsletter/{{ $newsletter->slug }}"
                             class="swiper-slide rounded-md bg-white p-2 w-full h-72 border border-solid border-primary">
@@ -160,9 +141,9 @@
                 @endif
 
             </div>
-            <div class="w-full flex justify-center pagination mt-10">
-                {{ $perpustakaans->links() }}
-            </div>
+            {{-- <div class="w-full flex justify-center pagination mt-10">
+                {{ $newsletter->links() }}
+            </div> --}}
         </div>
     </div>
 
