@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\PerpusController;
 use App\Http\Controllers\FaQController;
+use App\Http\Controllers\PusatBantuanController;
+use App\Models\PusatBantuan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,5 +36,5 @@ Route::get('/perpustakaan', [PerpusController::class, 'index'])->name('perpustak
 Route::get('/perpustakaan/{slug}', [PerpusController::class, 'detail']);
 Route::get('/faq', [FaQController::class, 'index']);
 Route::get('/faq/{slug}', [FaQController::class, 'detail']);
-Route::post('/pusatbantuan', [ReportController::class, 'create']);
-
+Route::post('/pusatbantuan', [PusatBantuanController::class, 'create']);
+Route::get('/pusatbantuan', [PusatBantuanController::class, 'index']);

@@ -156,7 +156,7 @@
 @endpush
 @section('main')
     <header class="h-screen w-full flex flex-col justify-center items-center scroll-smooth">
-        <button onclick="togglePusatBantuan()" class="bg-primary text-white flex fixed bottom-5 right-5 rounded-md z-50 p-3">Pusat Bantuan</button>
+        <button onclick="togglePusatBantuan()" class="bg-blue-500 text-white flex fixed bottom-5 right-5 rounded-md z-50 p-3">Pusat Bantuan</button>
         <img class="w-full block lg:hidden md:w-2/3 animate__animated animate__fadeInDown"src="/img/hero2.png" alt="hero">
         <div class="w-full flex  lg:content-center lg:justify-between px-10  ">
             <div class="w-full flex flex-col m-auto justify-center  lg:items-start items-center animate__animated animate__fadeInLeft">

@@ -93,9 +93,10 @@
 
     <main class="w-full overflow-x-hidden">
         @yield('main')
-        <div id="pusatbantuan" class="container border p-3 w-1/3 fixed bottom-5 right-5 bg-white shadow-xl rounded-lg z-50 hidden">
+        <div id="pusatbantuan" class="container p-3 lg:w-1/3 w-full fixed bottom-5 lg:right-5  z-50 hidden">
+            <div class="w-full h-full p-3 bg-white shadow-xl rounded-lg border">
             <div class="flex justify-between w-full items-center">
-              <h1 class="text-3xl font-bold text-primary text-center lg:text-start w-full">Pusat Bantuan</h1>
+              <h1 class="text-xl font-bold text-primary text-start w-full">Pusat Bantuan</h1>
               <button onclick="closeWindowAndReturnToBeranda()" class="lg:text-end" data-garden-id="buttons.icon_button" data-garden-version="8.74.0" type="button" aria-label="Perkecil widget">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" data-testid="Icon--dash" data-garden-id="buttons.icon" data-garden-version="8.74.0" class="StyledIcon-sc-19meqgg-0 cqORhS">
                       <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M3 8h10"></path>
@@ -123,8 +124,9 @@
                       <textarea id="kendala" name="kendala" class="h-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tuliskan Kendala Anda" required=""></textarea>
                   </div>
               </div>
-              <button type="submit" class="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-3">Submit</button>
+              <button type="submit" class="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm !w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-3">Submit</button>
           </form>
+        </div>
       </div>
     </main>
 
@@ -247,8 +249,6 @@
     </script>
     <script>
         function closeWindowAndReturnToBeranda() {
-    // Menutup jendela saat ini
-    window.close();
 
     // Mengarahkan kembali ke halaman beranda
     window.location.href = "/"; // Ganti "/beranda" dengan URL sesuai kebutuhan Anda
